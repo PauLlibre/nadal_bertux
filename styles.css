@@ -1,0 +1,261 @@
+body{
+    background-color: rgb(255, 110, 110);
+    color: white;
+}
+
+button{
+    border: none;
+    background-color: inherit;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bolder;
+}
+
+.answer:hover {
+    transform: scale(1.1); /* Use transform for scaling */
+    /* Add other styles as needed */
+}
+
+.slide_1{
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.option_slide{
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    gap: 80px;
+}
+
+.fact{
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.fact_img{
+    margin-top: 30px;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img_cabana{
+    background-image: url("./images/cabana.jpg");
+}
+
+.img_pont{
+    background-image: url("./images/pont.jpg");
+}
+
+.img_sopar{
+    background-image: url("./images/sopar_cabana.png");
+    background-size: contain;
+}
+
+.img_massatge{
+    background-image: url("./images/massatge.png");
+    background-size: contain;
+}
+
+.img_caldea{
+    background-image: url("./images/Caldea.jpg");
+    background-size: contain;
+}
+
+.img_caldea_2{
+    background-image: url("./images/caldea_2.jpg");
+    background-size: contain;
+}
+
+.img_caldea_3{
+    background-image: url("./images/caldea_3.jpg");
+    background-size: contain;
+}
+
+.img_compras{
+    background-image: url("./images/compras.jpg");
+    background-size: contain;
+}
+
+.img_andorra{
+    background-image: url("./images/andorra.jfif");
+    background-size: contain;
+}
+
+.img_paseo{
+    background-image: url("./images/paseo.jpg");
+    background-size: contain;
+}
+
+.fact_txt{
+    font-size: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.title_1{
+    text-align: center;
+}
+.title_2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.slide_2{
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding-left: 400px;
+    padding-right: 400px;
+    position: absolute;
+    /* width: max-content; */
+    /* align-self: center;
+    justify-self: center; */
+}
+
+.decision_slide{
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding-left: 400px;
+    padding-right: 400px;
+    position: absolute;
+    /* width: max-content; */
+    /* align-self: center;
+    justify-self: center; */
+}
+
+.decision_container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.option{
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    /* border-radius: 20px; */
+    background-size: cover;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Adding transitions */
+} 
+.option:hover{
+    scale: 1.1;
+    opacity: 1;
+}
+
+.o_1{
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+    background-image: url("./images/Caldea.jpg");
+    transition: opacity 1s ease, transform 0.5s ease; /* Adding transitions */
+    background-size: cover;
+}
+
+.o_2{
+    background-image: url("./images/cabana.jpg");
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+    transition: opacity 2s ease, transform 0.5s ease; /* Adding transitions */
+    background-size: cover;
+}
+
+.o_1:hover{
+    opacity: 1;
+}
+.o_2:hover{
+    opacity: 1;
+}
+.answer{
+    font-size: 20px;
+}
+
+.answer_container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.jim_img img{
+    z-index: -1;
+    top: 0;
+    max-width: 300px;
+    right: 100px;
+}
+
+.hide{
+    display: none !important;
+}
+
+.wrong{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.retry{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: yellow;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.retry:hover{
+    scale: 1.1;
+}
+
+.img_display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.img_display img{
+    width: 800px;
+}
+
+
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slide_1" id="s_1">
+
+        <div class="jim_img">     
+            <img src="./images/christmas_jim.png" class="title_1"/>
+        </div>
+
+        <div class="title_1">
+            HOLA AMOR
+        </div>
+        
+        <div class="answer_container">
+            <button class="answer" onclick="handleButtonClick(1, this)">
+                1. hola bb
+            </button>
+            <button class="answer" onclick="handleButtonClick(1, this)">
+                2. hola amor meu
+            </button>
+            <button class="answer" onclick="handleButtonClick('wrong', this)">
+                3. Adéu fastigos
+            </button>
+        </div>
+
+    </div>
+    <div class="slide_2 hide" id="s_2">
+
+        <div class="jim_img">     
+            <img src="./images/pam_present.png" class="title_1"/>
+        </div>
+
+        <div class="title_2">
+            Sé que encara queda per nadal però t'he de espatllar una sorpresa...
+        </div>
+        
+        <div class="answer_container">
+            <button class="answer" onclick="handleButtonClick('wrong', this)">
+                1. Ets el pitjor novio del món
+            </button>
+            <button class="answer" onclick="handleButtonClick('wrong', this)">
+                2. No saps aguantar-te les sorpreses...
+            </button>
+            <button class="answer" onclick="handleButtonClick(2, this)">
+                3. No passa res bb
+            </button>
+        </div>
+
+    </div>
+    <div class="slide_1 hide" id="s_3">
+
+        <div class="jim_img">     
+            <img src="./images/jim_thinking.png" class="title_1"/>
+        </div>
+
+        <div class="title_2">
+            Tinc una petita indecisió...
+        </div>
+        
+        <div class="answer_container">
+            <button class="answer" onclick="handleButtonClick('wrong', this)">
+                1. ACLARAT PRINGAT
+            </button>
+            <button class="answer" onclick="handleButtonClick(3, this)">
+                2. Jo t'ajudo
+            </button>
+            <button class="answer" onclick="handleButtonClick('wrong', this)">
+                3. KILIMANJARO
+            </button>
+        </div>
+
+    </div>
+    <div class="slide_2 hide" id="s_5">
+
+        <div class="jim_img">     
+            <img src="./images/theoffice-1.gif" class="title_1"/>
+        </div>  
+
+        <div class="title_2">
+            BONA DECISIÓ, SI ESQUE ETS UNA PASSADA, AMB AQUESTES HABILITATS SELECTIVES CADA DIA EM CONQUISTES MÉS. ARA NOMÉS FALTA UNA COSA, DIGAM-HO PORFA SINO NO HO SABRÉ...
+        </div>
+
+    </div>
+    <div class="decision_slide hide" id="s_4">
+
+        <div class="title_2">
+            Vam dir que preferiem no fer-nos regals grans per poder fer més coses juntets i no se quina cosa juntets prefereixo, per tant et passo la decisió
+        </div>
+        
+        <div class="decision_container" style="margin-bot: 40px">
+            <div class="option" onclick="handleButtonClick('caldea', this)">
+                <div class="o_1">
+                </div>
+            </div>
+            <div class="option" onclick="handleButtonClick('cabana', this)">
+                <div class="o_2">
+                </div>
+            </div>
+        </div>
+
+        <button class="retry" onclick="handleButtonClick(4, this)">
+            JA SE EL QUE VULL
+        </button>
+
+    </div>
+    <div class="option_slide hide" id="cabana">
+
+        <div class="title_1">
+            Una petita Cabana al mig del bosc
+        </div>
+                
+        <div class="fact">
+            <div class="fact_img img_cabana">
+            </div>
+            <div class="fact_txt">
+                Som humans pero també una mica micus, jo crec que li pillariem el gustillu a estar a un arbre
+            </div>
+        </div>
+        <div class="fact">
+            <div class="fact_txt">
+                PARC D'AVENTURA PER ANAR AL LLIT??????? K FORT EM SEMBLA
+            </div>
+            <div class="fact_img img_pont" style="align-self: flex-end !important;">
+            </div>
+        </div>
+        <div class="fact">
+            <div class="fact_img img_sopar">
+            </div>
+            <div class="fact_txt">
+                SOPARET ROMANTIC????
+            </div>
+        </div>
+        <div class="fact">
+            <div class="fact_txt">
+                UUUUUUN MASSATGE TAMBÉ????
+            </div>
+            <div class="fact_img img_massatge" style="align-self: flex-end !important;">
+            </div>
+        </div>
+        <div class="fact_txt">
+            Vinga va et deixo veure la habitació també... Que mimada...
+        </div>
+        <div class="img_display">
+            <img src="./images/habitacio_1.jpg"/>
+            <img src="./images/habitacio_2.jpg"/>
+            <img src="./images/habitacio_3.jpg"/>
+            <img src="./images/habitacio_4.jpg"/>
+            <img src="./images/habitacio_5.jpg"/>
+        </div>
+        
+        <button class="retry" onclick="handleButtonClick('back', this)">
+            ENRERE
+        </button>
+
+    </div>
+    <div class="option_slide hide" id="caldea">
+
+        <div class="title_1">
+            ANDORRA + CALDEA
+        </div>
+                
+        <div class="fact">
+            <div class="fact_img img_caldea">
+            </div>
+            <div class="fact_txt">
+                Som humans pero també una mica llubarrus, jo crec que li pillariem el gustillu a estar sota l'aigua
+            </div>
+        </div>
+        <div class="fact">
+            <div class="fact_txt">
+                QUE XULA ES ANDORRA AL NADAL NO?
+            </div>
+            <div class="fact_img img_andorra" style="align-self: flex-end !important;">
+            </div>
+        </div>
+        <div class="fact">
+            <div class="fact_img img_caldea_2">
+            </div>
+            <div class="fact_txt">
+                I SI A SOBRE LI SUMEM QUE ANIRAS AMB BIKINI...
+            </div>
+        </div>
+        <div class="fact">
+            <div class="fact_txt">
+                EL SPA SON 3 HORES PERO ESQUE TENIM MES COSES A FER..
+            </div>
+            <div class="fact_img img_caldea_3" style="align-self: flex-end !important;">
+            </div>
+        </div>
+        <div class="fact">
+            <div class="fact_img img_compras">
+            </div>
+            <div class="fact_txt">
+                ANAR DE COMPRAS....
+            </div>
+        </div>
+        <div class="fact">
+            <div class="fact_txt">
+                PASSEJAR...
+            </div>
+            <div class="fact_img img_paseo" style="align-self: flex-end !important;">
+            </div>
+        </div>
+        <div class="fact_txt">
+            i evidentment el nostre art preferit, MENJAR        
+        </div>
+        
+        <button class="retry" onclick="handleButtonClick('back', this)">
+            ENRERE
+        </button>
+
+    </div>
+    <div class="wrong hide" id="wrong">
+
+        <div class="jim_img">     
+            <img src="./images/bertux.png"/>
+        </div>
+
+        <div class="title_1">
+            NO M'ESTIMES PROU...
+        </div>
+        
+        <button class="retry" onclick="handleButtonClick('retry')">
+            REINTENTAR
+        </button>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
